@@ -35,8 +35,22 @@
   // stylelint-disable-next-line
   #search_widget {
     input {
-      padding-right: 1rem;
+      padding: 0.5rem;
+      font-size: 1.1rem;
+      line-height: normal;
+      color: black;
+      outline: none;
     }
+
+    i {
+      position: absolute;
+      right: 0;
+      height: 42px;
+      line-height: 1.8;
+      /* background: white;*/
+
+      .clear { display: none;}
+     }
   }
 }
 
@@ -83,13 +97,14 @@
 @include media-breakpoint-up(md) {
   .search-widget {
     min-width: 15.63rem;
+    flex: 0 0 20% ;
   }
 }
 
 @include media-breakpoint-up(sm) {
   .header-top {
     .search-widgets {
-      max-width: 13rem;
+      flex:  0 0 13%;
     }
   }
 }

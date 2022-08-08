@@ -21,11 +21,13 @@
     }
 
     button[type="submit"] {
+      /*
       position: absolute;
       right: 0.125rem;
       bottom: 0.3125rem;
       color: $gray;
       background: none;
+      */
       border: none;
 
       .search:hover {

@@ -35,8 +35,25 @@
 
 #footer {
   .block_newsletter {
-    p {
+    p:not(.h3) {
       padding-top: $small-space;
+      color: $gray-second;
+    }
+
+    .nl-inputs {
+      display: flex;
+      align-items: stretch;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      button[type=submit] {
+        position: inherit;
+        background: $brand-primary;
+
+        i {
+          margin: 0;
+        }
+      }
     }
 
     #block-newsletter-label {
