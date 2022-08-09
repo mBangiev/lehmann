@@ -1,7 +1,7 @@
 #footer {
 
   .copyright-row {
-    background-color: rgba(0,0,0,.3);
+   /* background-color: rgba(0,0,0,.3);*/
 
     p {
       margin: 0;
@@ -205,6 +205,10 @@
   overflow: hidden;
   background-color: $brand-secondary;
   border-top: 6px solid $brand-primary;
+
+  > .container {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
 
   .h3,
   .h4,

@@ -65,7 +65,7 @@
 {block name='header_top'}
   <div class="header-top">
     <div class="container-fluid">
-       <div class="row">
+       <div class="row d-flex align-items-center">
         <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
           {if $shop.logo_details}
             {if $page.page_name == 'index'}

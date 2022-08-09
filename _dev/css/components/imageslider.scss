@@ -47,6 +47,7 @@
       .display-1 {
         font-size: 3rem;
         font-weight: 700;
+        line-height: 1;
       }
     }
 
@@ -278,4 +279,23 @@ section.sbs_manufacturer_slider {
     a { color: $white;}
   }
 
+}
+
+/**** homeIcons ****/
+.homeIcons {
+  .rte {
+    padding: 1rem;
+    box-shadow: none;
+    border-radius: 10px;
+    transition: .3s box-shadow;
+
+    img {
+      margin: auto;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+    }
+  }
 }

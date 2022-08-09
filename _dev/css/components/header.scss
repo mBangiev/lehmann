@@ -45,6 +45,7 @@ body #header .header-nav {
   .logo {
     max-width: 100%;
     height: auto;
+    margin: 1.5rem 0;
   }
 
   #_desktop_logo {
@@ -77,6 +78,7 @@ body #header .header-nav {
 
     .header-nav-inner {
       padding: .5rem 0;
+      overflow: hidden;
     }
 
     #menu-icon {
@@ -159,6 +161,21 @@ body #header .header-nav {
           &:hover {
             color: $brand-primary;
           }
+
+          span.cart-products-count {
+            position: absolute;
+            background: $brand-primary;
+            right: -12px;
+            font-size: 80%;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: -8px;
+        }
+
         }
 
         &.active {
@@ -168,7 +185,8 @@ body #header .header-nav {
         }
 
         .header {
-          margin-top: 0.125rem;
+          margin: 0 1.25rem;
+          position: relative;
         }
       }
 
@@ -254,6 +272,11 @@ body #header .header-nav {
   #header  .header-top {
     padding: 0;
   }
+}
+
+.Content-topleft {
+  color: white;
+  font-size: 0.9rem;
 }
 
 /**** mobile bar ****/
