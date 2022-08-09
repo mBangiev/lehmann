@@ -36,14 +36,18 @@
         {hook h='displayFooter'}
       {/block}
     </div>
+
+    {*
     <div class="row">
       {block name='hook_footer_after'}
         {hook h='displayFooterAfter'}
       {/block}
     </div>
+    *}
   </div>
+  <div class="container">
     <div class="row">
-      <div class="col-md-12 copyright-row">
+      <div class="col-md-6 copyright-row text-left">
         <p class="text-sm-center">
           {block name='copyright_link'}
             <a href="https://www.prestashop-project.org/" target="_blank" rel="noopener noreferrer nofollow">
@@ -52,5 +56,11 @@
           {/block}
         </p>
       </div>
+      <div class="col-md-6 FooterAfter text-right">
+        {block name='hook_footer_after'}
+          {hook h='displayFooterAfter'}
+        {/block}
+      </div>
     </div>
+  </div>
 </div>
