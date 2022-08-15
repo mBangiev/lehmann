@@ -48,7 +48,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 copyright-row text-left">
-        <p class="text-sm-center">
+        <p class="copyright-content">
           {block name='copyright_link'}
             <a href="https://www.prestashop-project.org/" target="_blank" rel="noopener noreferrer nofollow">
               {l s='%copyright% %year% %shop_name%' sprintf=['%shop_name%' => {$shop.name}, '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}

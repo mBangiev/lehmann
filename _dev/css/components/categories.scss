@@ -164,7 +164,7 @@
     display: inline-flex;
     align-items: center;
     width: 100%;
-    padding: $small-space $small-space $small-space $medium-space;
+    padding: .5rem 0;
     margin-left: 0;
     color: $gray-darker;
     cursor: pointer;
@@ -225,12 +225,15 @@
 
     .facet-label {
       margin-bottom: 0;
-
+      display: flex;
+      align-items: center;
+      
       a {
         display: inline-block;
         margin-top: 0.4375rem;
         font-size: $font-size-lg;
         color: $gray-darker;
+        margin: 0 0 9px 0;
       }
     }
   }
@@ -250,16 +253,15 @@
 .pagination {
   width: 100%;
   font-size: 0.875rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1.25rem;
 
   > div:first-child {
     padding-left: 0;
-    line-height: 2.5rem;
   }
 
   .page-list {
-    padding: 0.375rem;
     margin-bottom: 0;
-    background: $white;
 
     li {
       display: inline;

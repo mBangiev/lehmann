@@ -95,7 +95,7 @@ body#checkout {
     .step-title {
       padding-bottom: 1.25rem;
       margin-bottom: 0;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 500;
       text-transform: uppercase;
       cursor: pointer;
@@ -183,7 +183,7 @@ body#checkout {
         font-size: 1rem;
         color: $white;
         vertical-align: middle;
-        background-color: $current-step-color;
+        background-color: $brand-primary;
         border: none;
         border-radius: 50%;
       }
@@ -205,6 +205,14 @@ body#checkout {
           margin-right: 0.125rem;
           color: $gray;
           cursor: pointer;
+          background: $gray-lighter;
+          padding: 0.125rem 0.5rem;
+          border-radius: 6px;
+          line-height: normal;   
+          
+          &:hover {
+            background-color: $gray-light;
+          }
         }
       }
 
@@ -484,8 +492,37 @@ body#checkout {
       border: $gray-light 1px solid;
     }
 
+    li.media {
+      border-bottom: 1px solid rgba(0,0,0, .1);
+      margin-bottom: 1.4rem;
+      padding-bottom: 1.4rem;
+
+      br {
+        display: none;
+      }
+
+      .product-line-info.text-muted .value, .product-line-info.text-muted .label {
+        font-size: 80%!important;
+        line-height: 1;
+    }
+    &:last-child {
+      border-bottom: 0 none;
+      padding-bottom: 0;
+    }
+  }
+
     .media-body {
       vertical-align: middle;
+
+      span.product-quantity {
+        float: left;
+        margin-right: .25rem;
+        background: $gray-light;
+        display: inline-block;
+        padding: 0 .25rem;
+        border-radius: 5px;
+      }
+
     }
   }
 
@@ -578,12 +615,6 @@ body#checkout {
       max-width: 100%;
       margin-bottom: 10px;
     }
-  }
-
-  #footer {
-    padding: 0.9375rem;
-    color: $gray;
-    background: $white;
   }
 
   #delivery {

@@ -124,6 +124,15 @@ body #header .header-nav {
         .account {
           margin-left: $small-space;
         }
+
+        i {
+          color: $white;
+        }
+
+        span {
+          color: $gray;
+        }
+
       }
 
       .language-selector {

@@ -75,6 +75,7 @@ label .color,
 .btn-primary,
 .btn-secondary {
   padding: 0.5rem 1.25rem;
+  transition: .1s background-color;
 
   .material-icons {
     margin-right: $small-space;

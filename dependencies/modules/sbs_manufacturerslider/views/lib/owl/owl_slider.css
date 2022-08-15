@@ -1,0 +1,46 @@
+#jssor_slider .slide_text{
+    position: absolute;
+    line-height: normal;
+    color: #000000;
+    padding: 15px 15px 0 15px;
+    text-align: center;
+}
+#jssor_slider .slide_text_content{
+    position: relative;
+    z-index: 1;
+}
+#jssor_slider .slide_text_background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media (min-width: 576px) {
+    .slide_text.container {
+        left: 50%;
+        margin-left: -270px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slide_text.container {
+        left: 50%;
+        margin-left: -360px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slide_text.container {
+        left: 50%;
+        margin-left: -480px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slide_text.container {
+        left: 50%;
+        margin-left: -550px;
+    }
+}

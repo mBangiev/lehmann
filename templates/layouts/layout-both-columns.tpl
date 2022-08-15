@@ -57,8 +57,7 @@
         {/block}
 
         {if $page.page_name == 'index'}
-            {hook h="displayTopColumn"}
-            {hook h="displayHomePageWrapperTop"}
+            {hook h="displayHomeFullWidth"}
         {/if}
         
         <div class="container">

@@ -1,0 +1,29 @@
+div#scroll2Top a {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    -moz-opacity: 0.3;
+    -webkit-opacity: 0.3;
+    opacity: 0.3;
+    z-index: 5020;
+}
+
+div#scroll2Top a.scroll2Top_oldest_versions:after {
+    font-family: "FontAwesome";
+    font-size: 50px;
+    position: absolute;
+    content: "\f139";
+}
+
+div#scroll2Top a:hover {
+    opacity: 0.9;
+}
+
+div#scroll2Top.ps_17 a {
+    bottom: 40px;
+}
+
+div#scroll2Top.ps_17 a i {
+    font-size: 50px;
+}
