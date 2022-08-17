@@ -1,13 +1,14 @@
+#search_widget form {
+    position: relative;
+}
 
-    #search_widget form { 
-        position: relative;
-    }
+#search_widget input {
+    border: 0 none ;
+    width: 100%;
+}
 
-    #search_widget input {
-        border: 0 none ;
-    }
-
-    #search_widget i {
-        position: absolute;
-        right: 0;
-    }
+#search_widget i {
+    background: white;
+    height: 38px;
+    line-height: 1.7;
+}

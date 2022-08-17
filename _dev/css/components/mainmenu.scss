@@ -5,6 +5,7 @@
 
   &[data-depth="0"] {
     margin-bottom: 0;
+    position: relative;
   }
 
   a:not([data-depth="0"]) {
@@ -109,6 +110,7 @@
 
   #top-menu {
     margin-bottom: 0.625rem;
+    width: 100%;
   }
 
   .top-menu {

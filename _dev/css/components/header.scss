@@ -201,10 +201,6 @@ body #header .header-nav {
 
       #_desktop_contact_link {
         display: inline-block;
-
-        #contact-link {
-          /*margin-top: 0.9375rem;*/
-        }
       }
 
       .search-widget {
@@ -264,6 +260,7 @@ body #header .header-nav {
       display: flex;
       align-items: center; 
       min-height: 50px;
+      flex: 1 0 30%;
 
       img {
         width: auto;
@@ -291,12 +288,36 @@ body #header .header-nav {
 /**** mobile bar ****/
 .mobile {
   background-color: $brand-secondary;
-  padding: .5rem 0;
+  display: flex;
+  align-items: center;
 
   div[id^="_mobile"] {
     i {
       color: $gray-dark;
     }
   }
+
+  #_mobile_search_widget {
+    flex: 0 0 26%;
+    margin: 0 0.7rem;
+
+    #search_widget form {
+      display: flex;
+      position: relative;
+      flex-direction: row-reverse;
+      align-content: stretch;
+
+      i.material-icons.clear {
+        position: absolute;
+      }
+    }
+
+  }
+
+div#menu-icon i {
+  color: white;
+  font-size: 1.9rem;
+  margin-right: 0.5rem;
+}
 
 }

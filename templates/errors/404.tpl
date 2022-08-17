@@ -24,17 +24,30 @@
  *}
 {extends file='page.tpl'}
 
+{block name='header'}
+{/block}
+
 {block name="breadcrumb"}{/block}
 
 {block name='page_title'}
+  <h1 class="forofour">404</h1>
   {$page.title}
 {/block}
 
 {capture assign="errorContent"}
   <h4>{l s='No products available yet' d='Shop.Theme.Catalog'}</h4>
   <p>{l s='Stay tuned! More products will be shown here as they are added.' d='Shop.Theme.Catalog'}</p>
+
+  <hr />
+  <a class="_blank" href="{$urls.base_url}" target="_blank">
+    {l s='%copyright% %year% %shop_name%' sprintf=['%shop_name%' => {$shop.name}, '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
+  </a>
 {/capture}
+
 
 {block name='page_content_container'}
   {include file='errors/not-found.tpl' errorContent=$errorContent}
+{/block}
+
+{block name='footer'}
 {/block}

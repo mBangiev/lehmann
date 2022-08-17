@@ -1,8 +1,6 @@
 #product {
   #content {
     position: relative;
-    max-width: 452px;
-    margin: 0 auto;
   }
 }
 
@@ -31,15 +29,22 @@
   }
 }
 
+.product-manufacturer {
+  width: 100px;
+
+  a {
+    display: block;
+  }
+
+  .manufacturer-logo {
+    border: 2px solid $gray-light;
+  }
+
+}
+
 .product-information {
   font-size: $font-size-lg;
   color: $gray-darker;
-
-  .manufacturer-logo {
-    max-height: 4rem;
-    margin-bottom: 1rem;
-    border: 2px solid $gray-light;
-  }
 
   .product-description {
     img {

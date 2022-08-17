@@ -4,6 +4,8 @@
      role="tabpanel"
   >
   {block name='product_reference'}
+
+    {*
     {if isset($product_manufacturer->id)}
       <div class="product-manufacturer">
         {if isset($manufacturer_image_url)}
@@ -18,6 +20,8 @@
         {/if}
       </div>
     {/if}
+    *}
+    
     {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
       <div class="product-reference">
         <label class="label">{l s='Reference' d='Shop.Theme.Catalog'} </label>

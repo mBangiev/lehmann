@@ -75,7 +75,7 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .block_newsletter {
-    padding-top: 1rem;
+  div#newsletterblock {
+    padding: 15px;
   }
 }
