@@ -24,7 +24,6 @@
  *}
 <div id="_desktop_contact_link" class="col-md-6 text-right">
   <div id="contact-link">
-    {if $contact_infos.phone}
       {* [1][/1] is for a HTML tag. *}
       {l
         s='Call us: [1]%phone%[/1]'
@@ -35,8 +34,6 @@
         ]
         d='Shop.Theme.Global'
       }
-    {else}
       <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
-    {/if}
   </div>
 </div>

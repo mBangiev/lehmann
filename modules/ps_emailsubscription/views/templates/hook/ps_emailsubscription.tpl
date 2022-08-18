@@ -70,15 +70,18 @@
             <input type="hidden" name="action" value="0">
             <div class="clearfix"></div>
           </div>
+
           <div class="small ">
-              {if $conditions}
-                <p>{$conditions}</p>
-              {/if}
-              {if $msg}
-                <p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
-                  {$msg}
-                </p>
-              {/if}
+              {*
+                {if $conditions}
+                  <p>{$conditions}</p>
+                {/if}
+                {if $msg}
+                  <p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
+                    {$msg}
+                  </p>
+                {/if}
+              *}
               {hook h='displayNewsletterRegistration'}
               {if isset($id_module)}
                 {hook h='displayGDPRConsent' id_module=$id_module}
